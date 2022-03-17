@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Formulário</title>
+</head>
+<body>
+    
+    <form action="backenp.php" method="get">
+        <label>Nome completo:</label>
+        <input type="text" name="nomeCliente"
+        placeholder="Digite seu nome competo" />
+        <br/><br/>
+        <label> Senha: </label>
+        <input type="password" name="senha" />
+        <br/><br/>
+        <label>Gênero: </label>
+        <input type="radio" name="genero" value="M" /> Masculino
+        <input type="radio" name="genero" value="F" /> Feminino
+        <br/><br/>
+        <label>Conduções:</label>
+        <input type="checkbox" name="veiculo" value="1" /> Bicicleta
+        <input type="checkbox" name="veiculo" value="2" /> Carro
+        <input type="checkbox" name="veiculo" value="3" /> Ônibus
+        <input type="hidden" name="campoEscondido" value="111" />
+        
+        <br/><br/>
+        <label> Universidade*: </label>
+        <select name="unis">
+        <option value="UNAMA">UNAMA</option>
+        <option value="UFPA">UFPA</option>
+        <option value="UFPA">UFPA</option>
+        <option value="UFPA">UFPA</option>
+        </select>
+        <br/><br/><br/>
+        <label>Postagem*:</label>
+        <textarea name="postagem" rows="5" cols="32"></textarea>
+        <br/><br/>
+        <label><u> Ou anexe um arquivo abaixo de no máximo 10mb:</label></u>
+        <br/><br/>
+        <input type="file" />
+        <!--HTML 5-->
+        
+        <br/><br/><br/>
+        <fieldset>
+            <legend> Inputs do HTML 5</legend>
+        <label>Número:</label>
+        <input type="number" name="numero" required />
+        <br/><br/><br/>
+        <label>E-mail:</label>
+        <input type="email" name="emailCliente" required />
+        <br/><br/><br/>
+        <label>Data:</label>
+        <input type="date" name="dataNascimento" required />
+        <br/><br/>
+         
+        
+        <input type="submit" value="Cadastrar 1" />
+        <input type="button" value="Cadastrar 2" />
+        <input type="reset" value="Limpar"
+            onclick="return confirm('Deseja realmente apagar?');"/>
+        
+        
+    
+        </fieldset>
+    </form>
+    <br/><br/><br/><br/>
+    
+    <hr>
+    <center>
+        <P><B>PESQUISA DE SATISFAÇÃO:</B></P>
+        <label>Pouco satisfeito</label> <input type="range" name="pesquisaSatisfacao" min="0" max="10"/> <label>Muito Satisfeito</label>
+    </center>
+    <hr>
+</body>
+</html>
